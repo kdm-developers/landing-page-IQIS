@@ -4,24 +4,20 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>IQIS Makassar | Beranda</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
     <style>
       body {
         font-family: "Inter", sans-serif;
       }
 
-      section::-webkit-scrollbar {
-      display: none;
+      .slider-container {
+          -ms-overflow-style: none; /* IE & Edge */
+          scrollbar-width: none; /* Firefox */
       }
-      section {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+
+      .slider-container::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, Opera */
       }
     </style>
   </head>
@@ -50,13 +46,12 @@
 
     <main class="max-w-2xl mx-auto mt-4 px-4 sm:px-6 md:px-8">
       <!-- Section Title -->
-      <h2 class="text-xs font-semibold text-[#1a1a1a] mb-2"> Pilihan Sedekah Terbaik </h2>
+      <!-- <h2 class="text-lg font-bold text-gray-900 mb-2"> Pilihan Sedekah Terbaik </h2> -->
+
       <!-- Scrollable Cards -->
-      <div class="flex space-x-2 overflow-x-auto pb-2 scrollbar-hide">
+      <!-- <div class="flex space-x-2 overflow-x-auto pb-2 scrollbar-hide"> -->
         <!-- Card 1 -->
-        <article
-          class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0"
-        >
+        <!-- <article class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0">
           <img
             alt="Banner image showing Gerakan Infaq Beras with people and green background"
             class="rounded-t-md w-full h-[100px] object-cover"
@@ -74,11 +69,9 @@
             <p class="text-[9px] text-[#7a7a7a]">Terkumpul</p>
             <p class="text-xs font-bold text-[#1a1a1a]">Rp. 207.776</p>
           </div>
-        </article>
+        </article> -->
         <!-- Card 2 -->
-        <article
-          class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0"
-        >
+        <!-- <article class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0">
           <img
             alt="Banner image showing Sedekah Sumur with a man and child drinking water"
             class="rounded-t-md w-full h-[100px] object-cover"
@@ -96,11 +89,9 @@
             <p class="text-[9px] text-[#7a7a7a]">Terkumpul</p>
             <p class="text-xs font-bold text-[#1a1a1a]">Rp. 751.174.211</p>
           </div>
-        </article>
+        </article> -->
         <!-- Card 3 -->
-        <article
-          class="min-w-[120px] bg-white rounded-md shadow-sm flex-shrink-0"
-        >
+        <!-- <article class="min-w-[120px] bg-white rounded-md shadow-sm flex-shrink-0">
           <img
             alt="Banner image showing Sedekah Pelosok with a person and green background"
             class="rounded-t-md w-full h-[100px] object-cover"
@@ -119,63 +110,91 @@
             <p class="text-xs font-bold text-[#1a1a1a]">Rp. 60.000</p>
           </div>
         </article>
-      </div>
+      </div> -->
 
 
-      <!-- Jenjang Sekolah -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 mb-8">
-          <a href="https://www.instagram.com/tkitibnulqayyim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    <!-- Jenjang Sekolah -->
+      <div class="mt-8 mb-8 overflow-x-auto slider-container overflow-x-scroll flex gap-4">
+        <div class="flex space-x-4 w-max px-2">
+
+          <a href="https://linkbio.co/kbitibnulqayyim"
             target="_blank"
-            class="relative flex flex-col items-center justify-center rounded-md aspect-square text-xs font-semibold text-white overflow-hidden shadow group"
-            style="background-image: url('img/iqis.jpeg'); background-size: cover; background-position: center;">
-            
-            <!-- Overlay gelap -->
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-white overflow-hidden shadow group"
+            style="background-image: url('img/iqis4.jpg'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-300"></div>
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/kbit.png" class="w-10 mb-1" />
+              <span class="text-center leading-tight">KBIT</span>
+            </div>
+          </a>
 
-            <div class="relative z-10 flex flex-col items-center p-4">
-              <img src="img/tkit.png" alt="logo Tk" class="w-14 mb-2" />
+          <a href="https://linktr.ee/tkitibnulqayyim"
+            target="_blank"
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-white overflow-hidden shadow group"
+            style="background-image: url('img/iqis.jpeg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-300"></div>
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/tkit.png" class="w-10 mb-1" />
               <span class="text-center leading-tight">TKIT</span>
             </div>
           </a>
 
-          <a href="https://www.instagram.com/sditibnulqayyim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          <a href="https://linktr.ee/sditibnulqayyim"
             target="_blank"
-            class="relative flex flex-col items-center justify-center rounded-md aspect-square text-xs font-semibold text-white overflow-hidden shadow group"
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-white overflow-hidden shadow group"
             style="background-image: url('img/iqis3.jpg'); background-size: cover; background-position: center;">
-            
-            <!-- Overlay gelap -->
             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-300"></div>
-
-            <div class="relative z-10 flex flex-col items-center p-4">
-              <img src="img/sdit.png" alt="logo Tk" class="w-14 mb-2" />
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/sdit.png" class="w-10 mb-1" />
               <span class="text-center leading-tight">SDIT</span>
             </div>
           </a>
 
-          <a href="https://www.instagram.com/smpit.ibnulqayyim_makassar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          <a href="https://linktr.ee/smpitibnulqayyim"
             target="_blank"
-            class="relative flex flex-col items-center justify-center rounded-md aspect-square text-xs font-semibold text-white overflow-hidden shadow group"
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-white overflow-hidden shadow group"
             style="background-image: url('img/iqis2.jpg'); background-size: cover; background-position: center;">
-            
-            <!-- Overlay gelap -->
             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-300"></div>
-
-            <div class="relative z-10 flex flex-col items-center p-4">
-              <img src="img/smpit.png" alt="logo Tk" class="w-14 mb-2" />
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/smpit.png" class="w-10 mb-1" />
               <span class="text-center leading-tight">SMPIT</span>
             </div>
           </a>
 
-          <a href="https://www.instagram.com/smkitibnulqayyim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          <a href="https://linktr.ee/smkitibnulqayyim"
             target="_blank"
-            class="flex flex-col items-center justify-center bg-white rounded-md shadow text-xs font-semibold text-[#1a1a1a] aspect-square hover:bg-gray-50 p-4">
-            <img src="img/smkit.png" alt="logo sma" class="w-14 mb-2" />
-            <span class="text-center leading-tight">SMKIT</span>
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-white overflow-hidden shadow group"
+            style="background-image: url('img/iqis6.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-300"></div> 
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/smkit.png" class="w-10 mb-1" />
+              <span class="text-center leading-tight">SMKIT</span>
+            </div>
           </a>
-        </div>
-      <!-- Penutup Jenjang -->
 
-      <section class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#ebfbe8]">
+          <a href="https://reliqo.iqis.sch.id/"
+            target="_blank"
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-black overflow-hidden shadow group bg-gray-50">
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/reliqo.png" class="w-10 mb-1" />
+              <span class="text-center leading-tight">RELIQO</span>
+            </div>
+          </a>
+
+          <a href="#"
+            target="_blank"
+            class="relative flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-black overflow-hidden shadow group bg-gray-50">
+            <div class="relative z-10 flex flex-col items-center p-2">
+              <img src="img/reliqo.png" class="w-10 mb-1" />
+              <span class="text-center leading-tight">BUROQ</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    <!-- Keunggulan -->
+      <!-- <section class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#ebfbe8]">
         <div class="max-w-md mx-auto md:mx-0">
           <p class="text-[#71c55d] text-xs font-semibold uppercase mb-1">
           FITUR APLIKASI BERAMALBERSAMA
@@ -221,16 +240,12 @@
             </div>
           </div>
         </div>
-        </section>
-
-
-
+        </section> -->
 
     <!-- Banner -->
-      <section class="mt-8 bg-white rounded-md shadow overflow-hidden">
+      <!-- <section class="mt-8 bg-white rounded-md shadow overflow-hidden">
         <img class="w-full object-cover" src="img/iqis.jpeg"/>
-      </section>
-    <!-- Penutup Banner -->
+      </section> -->
 
     <!-- Artikel -->
       <section class="mt-16 flex flex-row items-center justify-between">
@@ -240,64 +255,92 @@
         </a>
       </section>
 
-
-      <!-- Artikel-->
+      <!-- Section Artikel -->
         <section class="mt-4">
           <div class="flex flex-col space-y-4 px-2 sm:px-0">
             
             <!-- Artikel 1 -->
             <a href="/artikel/misi-sekolah-kami"
               class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
-              
-              <img src="img/iqis.jpeg"
-                  alt="Misi Sekolah Kami"
-                  class="w-28 h-32 object-cover rounded-l-lg" />
 
-              <div class="p-3 flex flex-col justify-center flex-grow">
-                <h3 class="font-semibold text-gray-900 text-base leading-tight">Misi Sekolah Kami </h3>
-                <p class="text-[11px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[11px] text-gray-600 mt-1 leading-snug line-clamp-3">
+              <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
+                  <img src="img/iqis5.jpg"
+                      alt="Misi Sekolah Kami"
+                      class="w-full h-full object-cover" />
+              </div>
+
+              <div class="p-4 flex flex-col justify-center flex-grow">
+                <h3 class="font-semibold text-gray-900 text-base leading-tight">Misi Sekolah Kami</h3>
+                <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
                   Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital...
                 </p>
               </div>
             </a>
 
-            <!-- Artikel 2 -->
             <a href="/artikel/misi-sekolah-kami"
               class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
-              
-              <img src="img/iqis.jpeg"
-                  alt="Misi Sekolah Kami"
-                  class="w-28 h-32 object-cover rounded-l-lg" />
 
-              <div class="p-3 flex flex-col justify-center flex-grow">
+              <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
+                  <img src="img/iqis4.jpg"
+                      alt="Misi Sekolah Kami"
+                      class="w-full h-full object-cover" />
+              </div>
+
+              <div class="p-4 flex flex-col justify-center flex-grow">
                 <h3 class="font-semibold text-gray-900 text-base leading-tight">Kegiatan Outing di Gowa</h3>
-                <p class="text-[11px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[11px] text-gray-600 mt-1 leading-snug line-clamp-3">
+                <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
                   Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital...
                 </p>
               </div>
             </a>
-            
-            <!-- Artikel 3 -->
+
             <a href="/artikel/misi-sekolah-kami"
               class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
-              
-              <img src="img/iqis.jpeg"
-                  alt="Misi Sekolah Kami"
-                  class="w-28 h-32 object-cover rounded-l-lg" />
 
-              <div class="p-3 flex flex-col justify-center flex-grow">
+              <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
+                  <img src="img/iqis2.jpg"
+                      alt="Misi Sekolah Kami"
+                      class="w-full h-full object-cover" />
+              </div>
+
+              <div class="p-4 flex flex-col justify-center flex-grow">
                 <h3 class="font-semibold text-gray-900 text-base leading-tight">Upacara Bendera Merah Putih 17 Agustus 2025</h3>
-                <p class="text-[11px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[11px] text-gray-600 mt-1 leading-snug line-clamp-3">
-                  Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital...
+                <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
+                  Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital ...
                 </p>
               </div>
             </a>
 
           </div>
         </section>
+
+        <section class="mt-16">
+          <h2 class="text-center text-2xl font-bold mb-8">Tanggapan Mereka Tentang IQIS?</h2>
+
+          <div class="max-w-7xl mx-auto px-4">
+                <!-- Testimoni 1 -->
+                <div class="swiper-slide">
+                  <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-3">
+                      <img src="img/kbit.png" class="w-14 h-14 rounded-full object-cover" />
+                      <div>
+                        <h3 class="font-bold">Joko Widodo</h3>
+                        <p class="text-gray-500 text-sm">Presiden RI ke-7</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 p-4 rounded-lg text-gray-600 text-[16px]">
+                      Ini menjadi salah satu experience yang terbarukan kepada anak-anak kita yang ada di sulawesi selatan ini,
+                      karna tidak semua sekolah bisa menghadirkan jurusan RPL dengan memperhatikan hafalan Al-Qurannya
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </section>
+
 
       
 
@@ -375,10 +418,10 @@
             <span class="mt-2">Fasilitas</span>
           </a>
 
-          <!-- Tentang -->
-          <a href="tentang.html" aria-label="Tentang" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+          <!-- Profil -->
+          <a href="profil.html" aria-label="Profil" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
             <i class="fas fa-info-circle text-[18px]"></i>
-            <span class="mt-2">Tentang</span>
+            <span class="mt-2">Profil</span>
           </a>
         </nav>
       </div>
