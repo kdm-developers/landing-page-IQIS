@@ -6,6 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -245,9 +247,14 @@
     <!-- Banner -->
       <!-- <section class="mt-8 bg-white rounded-md shadow overflow-hidden">
         <img class="w-full object-cover" src="img/iqis.jpeg"/>
-      </section> -->
+      </section>
 
-    <!-- Artikel -->
+      <div class="flex items-center justify-center min-h-screen p-5">
+        
+        
+      
+
+    <-- Artikel -->
       <section class="mt-16 flex flex-row items-center justify-between">
         <h2 class="text-lg font-bold text-gray-900">Artikel Terbaru</h2>
         <a class="text-sm text-gray-700 flex items-center space-x-1 hover:text-[#71c55d]" href="artikel.html">
@@ -317,30 +324,57 @@
           </div>
         </section>
 
+        
+
         <section class="mt-16">
           <h2 class="text-center text-2xl font-bold mb-8">Tanggapan Mereka Tentang IQIS?</h2>
 
+          <!-- Container Swiper -->
           <div class="max-w-7xl mx-auto px-4">
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+
                 <!-- Testimoni 1 -->
                 <div class="swiper-slide">
                   <div class="bg-white p-6 rounded-xl shadow-sm">
                     <div class="flex items-center gap-3">
-                      <img src="img/kbit.png" class="w-14 h-14 rounded-full object-cover" />
+                      <img src="img/smkit.png" class="w-14 h-14 rounded-full object-cover" />
                       <div>
-                        <h3 class="font-bold">Joko Widodo</h3>
-                        <p class="text-gray-500 text-sm">Presiden RI ke-7</p>
+                        <h3 class="font-bold">SMKIT</h3>
+                        <p class="text-gray-500 text-sm">Sekolah Menengah Kejuruan Islam Terpadu</p>
                       </div>
                     </div>
 
                     <div class="mt-4 p-4 rounded-lg text-gray-600 text-[16px]">
-                      Ini menjadi salah satu experience yang terbarukan kepada anak-anak kita yang ada di sulawesi selatan ini,
-                      karna tidak semua sekolah bisa menghadirkan jurusan RPL dengan memperhatikan hafalan Al-Qurannya
+                      Ini menjadi salah satu experience yang terbarukan kepada anak-anak kita yang ada di sulawesi selatan ini, karna tidak semua sekolah bisa menghadirkan jurusan RPL dengan memperhatikan hafalan Al-Qurannya.
                     </div>
                   </div>
                 </div>
+
+                <!-- Testimoni 2 -->
+                <div class="swiper-slide">
+                  <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-3">
+                      <img src="img/smpit.png" class="w-14 h-14 rounded-full object-cover" />
+                      <div>
+                        <h3 class="font-bold">SMPIT</h3>
+                        <p class="text-gray-500 text-sm">Sekolah Menengah Pertama  Islam Terpadu</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 p-4 rounded-lg text-gray-600 text-[16px]">
+                      Ini menjadi salah satu experience yang terbarukan kepada anak-anak kita yang ada di sulawesi selatan ini, karna tidak semua sekolah bisa menghadirkan jurusan RPL dengan memperhatikan hafalan Al-Qurannya.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </section>
 
+        
 
       
 
@@ -406,28 +440,42 @@
             <span class="mt-2">Beranda</span>
           </a>
 
-          <!-- Artikel -->
-          <a href="artikel.html" aria-label="Artikel" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
-            <i class="fas fa-book-open text-[18px]"></i>
-            <span class="mt-2">Artikel</span>
+          <!-- Informasi -->
+          <a href="infromasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+            <i class="fas fa-clipboard-list text-[18px]"></i>
+            <span class="mt-2">Informasi</span>
           </a>
 
-          <!-- Fasilitas -->
-          <a href="" aria-label="Fasilitas" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
-            <i class="fas fa-school text-[18px]"></i>
-            <span class="mt-2">Fasilitas</span>
+          <!-- Program -->
+          <a href="program.html" aria-label="Program" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+            <i class="fas fa-book-open text-[18px]"></i>
+            <span class="mt-2">Program</span>
           </a>
 
           <!-- Profil -->
           <a href="profil.html" aria-label="Profil" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
-            <i class="fas fa-info-circle text-[18px]"></i>
+            <i class="fas fa-school text-[18px]"></i>
             <span class="mt-2">Profil</span>
           </a>
         </nav>
       </div>
     <!-- Penutup NavBar -->
-
-
-      
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.testimonial-swiper', {
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination', // Elemen untuk pagination (titik-titik)
+          clickable: true,
+        },
+        slidesPerView: 1, 
+        spaceBetween: 30,
+      });
+    </script>
   </body>
 </html>

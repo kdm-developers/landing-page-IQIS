@@ -1,8 +1,10 @@
-.slider-container {
-    -ms-overflow-style: none; /* IE & Edge */
-    scrollbar-width: none; /* Firefox */
+.testimonial-swiper {
+  padding: 40px 0 60px 0; /* Beri ruang untuk panah dan pagination */
 }
-
-.slider-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4f46e5; /* Ganti warna panah */
+}
+.swiper-pagination-bullet-active {
+  background-color: #4f46e5; /* Warna titik pagination saat aktif */
 }
