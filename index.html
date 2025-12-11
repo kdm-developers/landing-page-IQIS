@@ -28,7 +28,7 @@
   <body class="bg-[#f7f7f7] m-0 p-0">
 
     <!-- Navbar -->
-      <header class="fixed top-0 w-full z-50 bg-[#ffdd00] pt-2 pb-2">
+      <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-green-600 to-green-800 pt-2 pb-2">
         <div class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
           <div class="flex items-center space-x-2">
             <img alt="yayasan" class="h-12" src="img/yayasaniqis.png" />
@@ -195,6 +195,46 @@
         </div>
       </div>
 
+      <!-- Poster Kontainer -->
+      <div class="w-full max-w-6xl bg-gradient-to-r from-green-600 to-green-800 text-white p-8 md:p-12 rounded-2xl shadow-2xl">
+          <h1 class="text-2xl md:text-2xl font-bold text-center mb-10">
+              Ibnul Qayyim Islamic School Makassar
+          </h1>
+
+          <!-- Statistik Grid: 2 atas & 2 bawah FIX -->
+          <div class="grid grid-cols-2 gap-4">
+
+              <!-- Item 1 -->
+              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
+                  <i class="fas fa-user-graduate text-[28px] mb-2"></i>
+                  <p class="text-xl font-extrabold">1500+</p>
+                  <p class="text-xs mt-1 font-medium">Siswa Aktif</p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
+                  <i class="fas fa-user-tie text-[28px] mb-2"></i>
+                  <p class="text-xl font-extrabold">76+</p>
+                  <p class="text-xs mt-1 font-medium">Tenaga Pendidik</p>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
+                  <i class="fas fa-chalkboard text-[28px] mb-2"></i>
+                  <p class="text-xl font-extrabold">42</p>
+                  <p class="text-xs mt-1 font-medium">Ruang Kelas</p>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
+                  <i class="fas fa-calendar-alt text-[28px] mb-2"></i>
+                  <p class="text-xl font-extrabold">2011</p>
+                  <p class="text-xs mt-1 font-medium">Tahun Berdiri</p>
+              </div>
+
+          </div>
+      </div>
+
     <!-- Keunggulan -->
       <!-- <section class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#ebfbe8]">
         <div class="max-w-md mx-auto md:mx-0">
@@ -257,7 +297,7 @@
     <-- Artikel -->
       <section class="mt-16 flex flex-row items-center justify-between">
         <h2 class="text-lg font-bold text-gray-900">Artikel Terbaru</h2>
-        <a class="text-sm text-gray-700 flex items-center space-x-1 hover:text-[#71c55d]" href="artikel.html">
+        <a class="text-sm text-gray-700 flex items-center space-x-1 hover:text-[green] hover:underline" href="artikel.html">
           <span>Lihat Semua</span>
         </a>
       </section>
@@ -383,7 +423,7 @@
     <!-- Penutup container -->
     
     <!-- Footer -->
-        <footer class="bg-[#71c55d] rounded-[32px] px-8 sm:px-6 py-8 text-white max-w-2xl mx-auto mt-8">
+        <footer class="bg-gradient-to-r from-green-600 to-green-800 rounded-[32px] px-8 sm:px-6 py-8 text-white max-w-2xl mx-auto mt-8">
           <div class="flex flex-col sm:flex-row justify-between gap-10">
             
             <!-- Lokasi -->
@@ -435,25 +475,25 @@
         <nav aria-label="Primary" class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14 text-gray-400 text-[12px] font-light">
           
           <!-- Beranda -->
-          <a href="index.html" aria-label="Beranda" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+          <a href="index.html" aria-label="Beranda" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
             <i class="fas fa-home text-[18px]"></i>
             <span class="mt-2">Beranda</span>
           </a>
 
           <!-- Informasi -->
-          <a href="infromasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+          <a href="infromasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
             <i class="fas fa-clipboard-list text-[18px]"></i>
             <span class="mt-2">Informasi</span>
           </a>
 
           <!-- Program -->
-          <a href="program.html" aria-label="Program" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+          <a href="program.html" aria-label="Program" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
             <i class="fas fa-book-open text-[18px]"></i>
             <span class="mt-2">Program</span>
           </a>
 
           <!-- Profil -->
-          <a href="profil.html" aria-label="Profil" class="flex flex-col items-center justify-center flex-1 hover:text-[#71c55d]">
+          <a href="profil.html" aria-label="Profil" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
             <i class="fas fa-school text-[18px]"></i>
             <span class="mt-2">Profil</span>
           </a>
