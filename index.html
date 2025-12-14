@@ -25,7 +25,7 @@
   </head>
 
 
-  <body class="bg-[#f7f7f7] m-0 p-0">
+  <body class="bg-[#F2F2F2] m-0 p-0">
 
     <!-- Navbar -->
       <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-green-600 to-green-800 pt-2 pb-2">
@@ -308,7 +308,7 @@
             
             <!-- Artikel 1 -->
             <a href="/artikel/misi-sekolah-kami"
-              class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+              class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
               <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                   <img src="img/iqis5.jpg"
@@ -326,7 +326,7 @@
             </a>
 
             <a href="/artikel/misi-sekolah-kami"
-              class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+              class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
               <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                   <img src="img/iqis4.jpg"
@@ -344,7 +344,7 @@
             </a>
 
             <a href="/artikel/misi-sekolah-kami"
-              class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+              class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
               <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                   <img src="img/iqis2.jpg"
@@ -364,8 +364,7 @@
           </div>
         </section>
 
-        
-
+        <!-- Testimoni -->
         <section class="mt-16">
           <h2 class="text-center text-2xl font-bold mb-8">Tanggapan Mereka Tentang IQIS?</h2>
 
@@ -375,7 +374,7 @@
 
                 <!-- Testimoni 1 -->
                 <div class="swiper-slide">
-                  <div class="bg-white p-6 rounded-xl shadow-sm">
+                  <div class="bg-white p-6 rounded-xl">
                     <div class="flex items-center gap-3">
                       <img src="img/smkit.png" class="w-14 h-14 rounded-full object-cover" />
                       <div>
@@ -392,7 +391,7 @@
 
                 <!-- Testimoni 2 -->
                 <div class="swiper-slide">
-                  <div class="bg-white p-6 rounded-xl shadow-sm">
+                  <div class="bg-white p-6 rounded-xl">
                     <div class="flex items-center gap-3">
                       <img src="img/smpit.png" class="w-14 h-14 rounded-full object-cover" />
                       <div>
@@ -497,6 +496,7 @@
     <script>
       const swiper = new Swiper('.testimonial-swiper', {
         loop: true,
+        autoHeight: true,
         autoplay: {
           delay: 3500,
           disableOnInteraction: false,

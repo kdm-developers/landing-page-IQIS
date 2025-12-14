@@ -4,55 +4,108 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>IQIS Makassar | Artikel</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
-            rel="stylesheet"
-            />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css">
         <style>
         body {
             font-family: "Inter", sans-serif;
         }
-
-        section::-webkit-scrollbar {
-            display: none;
-        }
-        section {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        }
         </style>
     </head>
-    <body class="bg-[#f7f7f7] m-0 p-0">
+    <body class="bg-[#F2F2F2]">
 
         <!-- Navbar -->
             <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-green-600 to-green-800 pt-2 pb-2">
-            <div class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
-                <form action="/artikel/cari" method="GET" class="flex items-center w-full gap-2">
-                <input
-                    type="text"
-                    name="q"
-                    placeholder="Cari artikel..."
-                    class="flex-1 h-10 px-3 rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-600"
-                />
-                <button
-                    type="submit"
-                    class="w-10 h-10 bg-white border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 flex items-center justify-center"
-                    aria-label="Cari"
-                >
-                    <i class="fas fa-search text-sm"></i>
-                </button>
-                </form>
-            </div>
+                <div class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
+                    <form action="/artikel/cari" method="GET" class="flex items-center w-full gap-2">
+                    <input
+                        type="text"
+                        name="q"
+                        placeholder="Cari artikel..."
+                        class="flex-1 h-10 px-3 rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-600"
+                    />
+                    <button
+                        type="submit"
+                        class="w-10 h-10 bg-white border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 flex items-center justify-center"
+                        aria-label="Cari"
+                    >
+                        <i class="fas fa-search text-sm"></i>
+                    </button>
+                    </form>
+                </div>
             </header>
 
             <main class="max-w-2xl mx-auto mt-4 px-4 sm:px-6 md:px-8 pt-4">
-                <!-- Artikel -->
+                <!-- Pengumuman -->
                     <section class="mt-16 flex flex-row items-center justify-between">
-                        <h2 class="text-lg font-bold text-gray-900">Artikel</h2>
+                        <h2 class="text-xl font-bold text-gray-900">Pengumuman</h2>
+                    </section>
+
+                    <section class="pt-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper announcementSwiper">
+                            <div class="swiper-wrapper">
+                            
+                            <!-- Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg overflow-hidden flex flex-col">
+                                    <img src="img/iqis2.jpg" alt="Pengumuman Libur" class="w-full h-48 object-cover">
+                                    <div class="p-6 flex-grow">
+                                        <span class="text-xs text-yellow-600 font-semibold">AKADEMIK</span>
+                                        <h3 class="text-md font-bold mt-2 mb-3 text-gray-800">Libur Semester Ganjil T.A 2024/2025</h3>
+                                        <p class="text-gray-600 text-sm">Diberitahukan kepada seluruh siswa bahwa libur semester ganjil akan dimulai pada tanggal...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg overflow-hidden flex flex-col">
+                                    <img src="img/iqis.jpeg" alt="Kegiatan Sekolah" class="w-full h-48 object-cover">
+                                    <div class="p-6 flex-grow">
+                                        <span class="text-xs text-yellow-600 font-semibold">KEGIATAN</span>
+                                        <h3 class="text-md font-bold mt-2 mb-3 text-gray-800">Perayaan Hari Kemerdekaan RI</h3>
+                                        <p class="text-gray-600 text-sm">Sekolah akan mengadakan serangkaian lomba untuk memperingati HUT Kemerdekaan RI...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg overflow-hidden flex flex-col">
+                                    <img src="img/iqis4.jpg" alt="Prestasi Siswa" class="w-full h-48 object-cover">
+                                    <div class="p-6 flex-grow">
+                                        <span class="text-xs text-yellow-600 font-semibold">PRESTASI</span>
+                                        <h3 class="text-md font-bold mt-2 mb-3 text-gray-800">Selamat! Tim Olimpiade Sains Juara 1</h3>
+                                        <p class="text-gray-600 text-sm">Tim Olimpiade Sains IQIS berhasil meraih juara 1 di tingkat provinsi. Selamat kepada...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="swiper-slide">
+                                <div class="bg-white rounded-lg overflow-hidden flex flex-col">
+                                    <img src="img/iqis6.jpg" alt="Pengumuman PPDB" class="w-full h-48 object-cover">
+                                    <div class="p-6 flex-grow">
+                                        <span class="text-xs text-yellow-600 font-semibold">PPDB</span>
+                                        <h3 class="text-md font-bold mt-2 mb-3 text-gray-800">Pembukaan Penerimaan Siswa Baru</h3>
+                                        <p class="text-gray-600 text-sm">Pendaftaran siswa baru untuk tahun ajaran 2025/2026 telah dibuka. Segera daftarkan...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                            <!-- Tambahkan Pagination -->
+                            <!-- <div class="swiper-pagination pt-20"></div> -->
+                        </div>
+
+                        </section>
+
+                <!-- Artikel -->
+                    <section class="mt-8 flex flex-row items-center justify-between">
+                        <h2 class="text-xl font-bold text-gray-900">Artikel</h2>
                     </section>
 
 
@@ -62,7 +115,7 @@
                                 
                                 <!-- Artikel 1 -->
                                 <a href="/artikel/misi-sekolah-kami"
-                                    class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+                                    class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
                                     <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                                         <img src="img/iqis5.jpg"
@@ -80,7 +133,7 @@
                                 </a>
 
                                 <a href="/artikel/misi-sekolah-kami"
-                                    class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+                                    class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
                                     <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                                         <img src="img/iqis5.jpg"
@@ -98,7 +151,7 @@
                                 </a>
 
                                 <a href="/artikel/misi-sekolah-kami"
-                                    class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+                                    class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
                                     <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                                         <img src="img/iqis5.jpg"
@@ -116,7 +169,7 @@
                                 </a>
 
                                 <a href="/artikel/misi-sekolah-kami"
-                                    class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+                                    class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
                                     <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                                         <img src="img/iqis5.jpg"
@@ -134,7 +187,7 @@
                                 </a>
                                 
                                 <a href="/artikel/misi-sekolah-kami"
-                                    class="w-full flex flex-row bg-white hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+                                    class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
 
                                     <div class="w-40 aspect-[1/1] overflow-hidden rounded-l-lg">
                                         <img src="img/iqis5.jpg"
@@ -226,5 +279,24 @@
                 </nav>
             </div>
             <!-- Penutup NavBar -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            const swiper = new Swiper('.announcementSwiper', {
+            slidesPerView: 1,
+            autoHeight: true,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+            });
+        </script>
     </body>
 </html>

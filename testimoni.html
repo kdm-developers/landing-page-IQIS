@@ -7,57 +7,144 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="style.css"> --> <!-- Style.css Anda mungkin tidak lagi diperlukan jika semua style ada di sini -->
     <style>
       body {
         font-family: "Inter", sans-serif;
+      }
+      /* Warna khusus untuk pagination dan navigasi swiper agar matching */
+      .swiper-pagination-bullet-active {
+        background-color: #3b82f6; /* blue-500 */
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #3b82f6; /* blue-500 */
       }
     </style>
   </head>
 
   <body class="bg-[#f7f7f7] m-0 p-0">
 
-  <main class="max-w-2xl mx-auto mt-4 px-4 sm:px-6 md:px-8">
-      <!-- Poster Kontainer -->
-      <div class="w-full max-w-6xl bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 md:p-12 rounded-2xl shadow-2xl">
-          <h1 class="text-3xl md:text-2xl font-bold text-center mb-10">
-              Sekolah Ibnul Qayyim Islamic School
-          </h1>
-
-          <!-- Statistik Grid: 2 atas & 2 bawah FIX -->
-          <div class="grid grid-cols-2 gap-4">
-
-              <!-- Item 1 -->
-              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
-                  <i class="fas fa-user-graduate text-[28px] mb-2"></i>
-                  <p class="text-xl font-extrabold">1500+</p>
-                  <p class="text-xs mt-1 font-medium">Siswa Aktif</p>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
-                  <i class="fas fa-user-tie text-[28px] mb-2"></i>
-                  <p class="text-xl font-extrabold">76+</p>
-                  <p class="text-xs mt-1 font-medium">Tenaga Pendidik</p>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
-                  <i class="fas fa-chalkboard text-[28px] mb-2"></i>
-                  <p class="text-xl font-extrabold">42</p>
-                  <p class="text-xs mt-1 font-medium">Ruang Kelas</p>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center flex flex-col justify-center items-center min-h-[140px]">
-                  <i class="fas fa-calendar-alt text-[28px] mb-2"></i>
-                  <p class="text-xl font-extrabold">2011</p>
-                  <p class="text-xs mt-1 font-medium">Tahun Berdiri</p>
-              </div>
-
-          </div>
+  <main class="max-w-6xl mx-auto mt-4 px-4 sm:px-6 md:px-8">
+      
+    <!-- ========== SECTION PENGUMUMAN ========== -->
+    <section class="py-12">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-gray-800">Pengumuman Terkini</h2>
+        <p class="text-gray-600 mt-2">Informasi penting dan kegiatan sekolah</p>
       </div>
 
+      <!-- Swiper Container -->
+      <div class="swiper announcementSwiper">
+        <div class="swiper-wrapper">
+          
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col">
+              <img src="https://picsum.photos/seed/pengumuman1/600/400.jpg" alt="Pengumuman Libur" class="w-full h-48 object-cover">
+              <div class="p-6 flex-grow">
+                <span class="text-xs text-blue-600 font-semibold">AKADEMIK</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Libur Semester Ganjil T.A 2024/2025</h3>
+                <p class="text-gray-600 text-sm">Diberitahukan kepada seluruh siswa bahwa libur semester ganjil akan dimulai pada tanggal...</p>
+              </div>
+              <div class="px-6 pb-4">
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col">
+              <img src="https://picsum.photos/seed/kegiatan2/600/400.jpg" alt="Kegiatan Sekolah" class="w-full h-48 object-cover">
+              <div class="p-6 flex-grow">
+                <span class="text-xs text-green-600 font-semibold">KEGIATAN</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Perayaan Hari Kemerdekaan RI</h3>
+                <p class="text-gray-600 text-sm">Sekolah akan mengadakan serangkaian lomba untuk memperingati HUT Kemerdekaan RI...</p>
+              </div>
+              <div class="px-6 pb-4">
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col">
+              <img src="https://picsum.photos/seed/prestasi3/600/400.jpg" alt="Prestasi Siswa" class="w-full h-48 object-cover">
+              <div class="p-6 flex-grow">
+                <span class="text-xs text-yellow-600 font-semibold">PRESTASI</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Selamat! Tim Olimpiade Sains Juara 1</h3>
+                <p class="text-gray-600 text-sm">Tim Olimpiade Sains IQIS berhasil meraih juara 1 di tingkat provinsi. Selamat kepada...</p>
+              </div>
+              <div class="px-6 pb-4">
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col">
+              <img src="https://picsum.photos/seed/ppdb4/600/400.jpg" alt="Pengumuman PPDB" class="w-full h-48 object-cover">
+              <div class="p-6 flex-grow">
+                <span class="text-xs text-purple-600 font-semibold">PPDB</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Pembukaan Penerimaan Siswa Baru</h3>
+                <p class="text-gray-600 text-sm">Pendaftaran siswa baru untuk tahun ajaran 2025/2026 telah dibuka. Segera daftarkan...</p>
+              </div>
+              <div class="px-6 pb-4">
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Tambahkan Pagination -->
+        <div class="swiper-pagination mt-6"></div>
+        <!-- Tambahkan Navigasi -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </section>
+    <!-- ========== END SECTION PENGUMUMAN ========== -->
+
   </main><br>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.announcementSwiper', {
+      slidesPerView: 2, // Tampilkan 2 card di desktop
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 0px (mobile-first)
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      }
+    });
+  </script>
 </body>
 </html>
