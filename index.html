@@ -4,6 +4,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>IQIS Makassar | Beranda</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -12,14 +14,12 @@
       body {
         font-family: "Inter", sans-serif;
       }
-
       .slider-container {
-          -ms-overflow-style: none; /* IE & Edge */
-          scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE & Edge */
+        scrollbar-width: none; /* Firefox */
       }
-
       .slider-container::-webkit-scrollbar {
-          display: none; /* Chrome, Safari, Opera */
+        display: none; /* Chrome, Safari, Opera */
       }
     </style>
   </head>
@@ -34,86 +34,16 @@
             <img alt="yayasan" class="h-12" src="img/yayasaniqis.png" />
           </div>
           
-          <button aria-label="PPDB" class="text-white text-xl ml-4">
+          <!-- <button aria-label="PPDB" class="text-white text-xl ml-4">
             <i class="fas fa-bars text-[24px]"> </i>
-          </button>
+          </button> -->
         </div>
       </header>
 
 
     <div class="bg-[url('img/bg1.png')] bg-cover bg-center bg-no-repeat h-[60vh] pt-16"></div> 
 
-    
-
-
     <main class="max-w-2xl mx-auto mt-4 px-4 sm:px-6 md:px-8">
-      <!-- Section Title -->
-      <!-- <h2 class="text-lg font-bold text-gray-900 mb-2"> Pilihan Sedekah Terbaik </h2> -->
-
-      <!-- Scrollable Cards -->
-      <!-- <div class="flex space-x-2 overflow-x-auto pb-2 scrollbar-hide"> -->
-        <!-- Card 1 -->
-        <!-- <article class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0">
-          <img
-            alt="Banner image showing Gerakan Infaq Beras with people and green background"
-            class="rounded-t-md w-full h-[100px] object-cover"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/12f0b4d7-54c7-4276-1d68-5eb9d136fe3b.jpg"
-            width="180"
-          />
-          <div class="px-2 pt-1 pb-2">
-            <h3 class="text-xs font-semibold text-[#1a1a1a] leading-tight">
-              Raih Berkah di Gerakan Infaq Beras
-            </h3>
-            <div class="h-1 w-full bg-[#d1d9e3] rounded-full mt-1 mb-1">
-              <div class="h-1 w-[20%] bg-[#4db0aa] rounded-full"></div>
-            </div>
-            <p class="text-[9px] text-[#7a7a7a]">Terkumpul</p>
-            <p class="text-xs font-bold text-[#1a1a1a]">Rp. 207.776</p>
-          </div>
-        </article> -->
-        <!-- Card 2 -->
-        <!-- <article class="min-w-[180px] bg-white rounded-md shadow-sm flex-shrink-0">
-          <img
-            alt="Banner image showing Sedekah Sumur with a man and child drinking water"
-            class="rounded-t-md w-full h-[100px] object-cover"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/5e2fa9de-8c8f-4830-37f6-d1449da0a386.jpg"
-            width="180"
-          />
-          <div class="px-2 pt-1 pb-2">
-            <h3 class="text-xs font-semibold text-[#1a1a1a] leading-tight">
-              Selamatkan Mereka dari Krisis Air: Sedekah Jariyah yang Tak
-            </h3>
-            <div class="h-1 w-full bg-[#d1d9e3] rounded-full mt-1 mb-1">
-              <div class="h-1 w-[70%] bg-[#1f4f5a] rounded-full"></div>
-            </div>
-            <p class="text-[9px] text-[#7a7a7a]">Terkumpul</p>
-            <p class="text-xs font-bold text-[#1a1a1a]">Rp. 751.174.211</p>
-          </div>
-        </article> -->
-        <!-- Card 3 -->
-        <!-- <article class="min-w-[120px] bg-white rounded-md shadow-sm flex-shrink-0">
-          <img
-            alt="Banner image showing Sedekah Pelosok with a person and green background"
-            class="rounded-t-md w-full h-[100px] object-cover"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/eb33a77a-b05f-4a49-cdb4-f54c127e7a09.jpg"
-            width="120"
-          />
-          <div class="px-2 pt-1 pb-2">
-            <h3 class="text-xs font-semibold text-[#1a1a1a] leading-tight">
-              Sedekah Pelosok
-            </h3>
-            <div class="h-1 w-full bg-[#d1d9e3] rounded-full mt-1 mb-1">
-              <div class="h-1 w-[40%] bg-[#71c55d] rounded-full"></div>
-            </div>
-            <p class="text-[9px] text-[#7a7a7a]">Terkumpul</p>
-            <p class="text-xs font-bold text-[#1a1a1a]">Rp. 60.000</p>
-          </div>
-        </article>
-      </div> -->
-
 
     <!-- Jenjang Sekolah -->
       <div class="mt-8 mb-8 overflow-x-auto slider-container overflow-x-scroll flex gap-4">
@@ -296,7 +226,7 @@
 
     <-- Artikel -->
       <section class="mt-16 flex flex-row items-center justify-between">
-        <h2 class="text-lg font-bold text-gray-900">Artikel Terbaru</h2>
+        <h2 class="text-xl font-bold text-gray-900">Artikel Terbaru</h2>
         <a class="text-sm text-gray-700 flex items-center space-x-1 hover:text-[green] hover:underline" href="artikel.html">
           <span>Lihat Semua</span>
         </a>
@@ -317,9 +247,9 @@
               </div>
 
               <div class="p-4 flex flex-col justify-center flex-grow">
-                <h3 class="font-semibold text-gray-900 text-base leading-tight">Misi Sekolah Kami</h3>
+                <h3 class="font-semibold text-gray-900 text-base leading-tight">Penghargaan Terbaik diraih oleh Siswa</h3>
                 <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-2">
                   Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital...
                 </p>
               </div>
@@ -337,7 +267,7 @@
               <div class="p-4 flex flex-col justify-center flex-grow">
                 <h3 class="font-semibold text-gray-900 text-base leading-tight">Kegiatan Outing di Gowa</h3>
                 <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-2">
                   Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital...
                 </p>
               </div>
@@ -355,7 +285,7 @@
               <div class="p-4 flex flex-col justify-center flex-grow">
                 <h3 class="font-semibold text-gray-900 text-base leading-tight">Upacara Bendera Merah Putih 17 Agustus 2025</h3>
                 <p class="text-[12px] text-gray-400 mt-1">Ibnul Qayyim Islamic School</p>
-                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-3">
+                <p class="text-[12px] text-gray-600 mt-1 leading-snug line-clamp-2">
                   Sekolah kami ada karena kami percaya bahwa pendidikan masa kini harus mencerminkan kebutuhan era digital ...
                 </p>
               </div>
@@ -369,7 +299,7 @@
           <h2 class="text-center text-2xl font-bold mb-8">Tanggapan Mereka Tentang IQIS?</h2>
 
           <!-- Container Swiper -->
-            <div class="swiper testimonial-swiper">
+            <div class="swiper carousel-swiper">
               <div class="swiper-wrapper">
 
                 <!-- Testimoni 1 -->
@@ -491,23 +421,5 @@
         </nav>
       </div>
     <!-- Penutup NavBar -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.testimonial-swiper', {
-        loop: true,
-        autoHeight: true,
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination', // Elemen untuk pagination (titik-titik)
-          clickable: true,
-        },
-        slidesPerView: 1, 
-        spaceBetween: 30,
-      });
-    </script>
   </body>
 </html>
