@@ -19,10 +19,9 @@
         <section>
             <h2 class="text-2xl font-bold mb-4 text-center">Tentang Kami</h2>
             <p class="text-gray-700 leading-relaxed text-justify">
-                Ibnul Qayyim Islamic School – IQIS adalah Sekolah Islam yang diselenggarakan dengan memadukan secara Integratif nilai dan ajaran Islam dalam bangunan kurikulum dengan pendekatan pembelajaran yang efektif dan pelibatan yang optimal dan koperatif antara guru dan orangtua, serta masyarakat untuk membina karakter dan kompetensi peserta didik. Berbekal niat yang ikhlas untuk memperbaiki generasi muda kaum muslimin di masa yang akan datang. Maka didirikanlah Ibnul Qayyim Islamic School pada tahun 2011 (SDIT) dengan mengusung konsep sekolah yang memiliki keunggulan pada ilmu keislaman ditambah tahfidzul qur’an dan bahasa asing (Arab & inggris) dengan tetap mengacu pada kurikulum yang di tetapkan pemerintah.
+                Ibnul Qayyim Islamic School - IQIS adalah Sekolah Islam yang diselenggarakan dengan memadukan secara Integratif nilai dan ajaran Islam dalam bangunan kurikulum dengan pendekatan pembelajaran yang efektif dan pelibatan yang optimal dan koperatif antara guru dan orangtua, serta masyarakat untuk membina karakter dan kompetensi peserta didik. Berbekal niat yang ikhlas untuk memperbaiki generasi muda kaum muslimin di masa yang akan datang. Maka didirikanlah Ibnul Qayyim Islamic School pada tahun 2011 (SDIT) dengan mengusung konsep sekolah yang memiliki keunggulan pada ilmu keislaman ditambah tahfidzul qur'an dan bahasa asing (Arab & inggris) dengan tetap mengacu pada kurikulum yang di tetapkan pemerintah.
             </p>
         </section>
-
 
         <!-- Video YouTube -->
         <section>
@@ -36,70 +35,600 @@
             </div>
         </section>
 
-        <!-- Visi Misi -->
-        <!-- <section>
-        <div class="bg-white shadow rounded-lg p-6 space-y-6 mt-8">
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Visi</h3>
-            <p class="text-gray-700">
-                Terwujudnya lembaga pendidikan Islam yang berkualitas dan berbasis pada pemahaman Ahlussunah wal Jama'ah dengan penguasaan hafalan Al-Quran, ilmu syar’iyah dan didukung dengan penguasaan bahasa Arab Dan English
-            </p>
-            </div>
-
-            <div>
-            <h3 class="text-xl font-semibold mb-2">Misi</h3>
-                <ul class="list-disc pl-6 text-gray-700 space-y-1 text-[16px]">
-                    <li>Mengembangkan lembaga pendidikan dengan pelayanan berkualitas, berstandar mutu dengan menajemen profesional di dukung oleh ketersediaan guru berkualitas, kurikulum yang memenuhi kebutuhan peserta didik dengan memperhatikan keterlibatan program ekstrakurikuler.</li>
-                    <li>Mengembangkan pendidikan yang berbasis bahasa Arab Dan English didukung dengan kekuatan penguasaan bidang Matematika, Sains, dan Wirausaha dengan memanfaatkan teknologi modern dan didasarkan pada kekuatan aqidah, akhlaq dan manhaj agama salafus sholeh.</li>
-                </ul>
-            </div>
-        </div>
-        </section> -->
-
-        <!-- Section 4: Prestasi dan Akreditasi -->
-        <section id="prestasi" class="py-12">
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
-                
-                <!-- Akreditasi -->
-                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-12 rounded">
-                    <h3 class="text-xl font-semibold mb-2 text-green-800">Akreditasi</h3>
-                    <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-SM). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
+        <!-- Tabs untuk Visi Misi dan Akreditasi -->
+        <section class="mt-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Tab Navigation -->
+                <div class="flex justify-center mb-6">
+                    <div class="bg-white rounded-full shadow-md p-1 flex flex-wrap justify-center max-w-lg">
+                        <button onclick="switchTab('kbit')" class="tab-btn px-4 py-2 rounded-full bg-green-600 text-white font-semibold text-xs transition-all duration-300" data-tab="kbit">
+                            KBIT
+                        </button>
+                        <button onclick="switchTab('tkit')" class="tab-btn px-4 py-2 rounded-full text-gray-600 text-xs transition-all duration-300" data-tab="tkit">
+                            TKIT
+                        </button>
+                        <button onclick="switchTab('sdit')" class="tab-btn px-4 py-2 rounded-full text-gray-600 text-xs transition-all duration-300" data-tab="sdit">
+                            SDIT
+                        </button>
+                        <button onclick="switchTab('smpit')" class="tab-btn px-4 py-2 rounded-full text-gray-600 text-xs transition-all duration-300" data-tab="smpit">
+                            SMPIT
+                        </button>
+                        <button onclick="switchTab('smkit')" class="tab-btn px-4 py-2 rounded-full text-gray-600 text-xs transition-all duration-300" data-tab="smkit">
+                            SMKIT
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Prestasi -->
-                <div>
-                    <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-medal text-yellow-400 mt-1"></i>
+                <!-- KBIT Content -->
+                <div id="kbit" class="tab-content">
+                    <!-- Visi Misi KBIT -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                        <div class="p-8 lg:p-12">
+                            <!-- Konten Visi -->
+                            <div class="mb-12">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-bullseye text-[24px] text-pink-600"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visi</h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Menjadi lembaga pendidikan Islam terbaik yang menghasilkan generasi saleh, cerdas, dan mandiri sejak dini
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konten Misi -->
                             <div>
-                                <h4 class="font-semibold">Juara 1 Olimpiade Sains Nasional (OSN) Matematika Tingkat Provinsi</h4>
-                                <p class="text-sm text-gray-600">Tahun 2023</p>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-rocket text-[24px] text-pink-600"></i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Misi</h3>
+                                        <ul class="text-gray-600 leading-relaxed space-y-2">
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Menanamkan nilai-nilai keislaman sejak dini melalui pembiasaan dan keteladanan.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mengembangkan potensi anak melalui kegiatan bermain yang edukatif dan menyenangkan.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Membentuk karakter anak yang mandiri, percaya diri, dan bertanggung jawab.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mengenalkan huruf hijaiyah dan dasar-dasar Al-Qur'an dengan metode yang menyenangkan.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Membangun kerjasama yang harmonis antara sekolah dan orang tua untuk perkembangan anak.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-medal text-yellow-400 mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold">Peringkat 3 Terbaik dalam Lomba Debat Bahasa Inggris Se-Sulawesi Selatan</h4>
-                                <p class="text-sm text-gray-600">Tahun 2022</p>
-                            </div>
+                    <!-- Prestasi dan Akreditasi KBIT -->
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
+                        
+                        <!-- Akreditasi -->
+                        <div class="bg-pink-50 border-l-4 border-pink-500 p-4 mb-12 rounded">
+                            <h3 class="text-xl font-semibold mb-2 text-pink-800">Akreditasi A</h3>
+                            <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional PAUD dan Pendidikan Anak Usia Dini (BAN PAUD dan PNF). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
                         </div>
 
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-medal text-yellow-400 mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold">Medali Emas Kejuaraan Pencak Silat Antar Pelajar</h4>
-                                <p class="text-sm text-gray-600">Tahun 2023</p>
+                        <!-- Prestasi -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 Lomba Mewarnai Tingkat Kota</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 2 Lomba Menari Tingkat Provinsi</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Best Performance dalam Pentas Seni Anak</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Sekolah Adiwiyata Tingkat Kota</h4>
+                                        <p class="text-sm text-gray-600">Penghargaan atas kepedulian lingkungan</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-medal text-yellow-400 mt-1"></i>
+                <!-- TK Content -->
+                <div id="tkit" class="tab-content hidden">
+                    <!-- Visi Misi TK -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                        <div class="p-8 lg:p-12">
+                            <!-- Konten Visi -->
+                            <div class="mb-12">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-bullseye text-[24px] text-pink-600"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visi</h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Mewujudkan peserta didik yang beriman, berakhlak mulia, berpikir kritis, mandiri dan bahagia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konten Misi -->
                             <div>
-                                <h4 class="font-semibold">Sekolah Adiwiyata Nasional</h4>
-                                <p class="text-sm text-gray-600">Penghargaan atas kepedulian lingkungan</p>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-rocket text-[24px] text-pink-600"></i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Misi</h3>
+                                        <ul class="text-gray-600 leading-relaxed space-y-2">
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik siswa senantiasa bertaqwa kepada Allah Subhanahu Wa Ta’ala dan berbakti kepada kedua orang tua dengan cara yang ma’ruf sesuai tuntunan Rasulullah Shallallahu Alaihi Wassalam.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik siswa hingga memiliki akhlak mulia sebagaimana akhlak Rasulullahu Alaihi Wassalam dalam bersikap dengan sesama.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik siswa agar mencintai Al-Qur’an dan hadits, mengamalkan isi keduanya, menghafalkan dan memahaminya sesuai dengan pemahaman para Salafus shalih.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mempersiapkan agar anak dapat menyesuaikan diri dengn lingkungan dan dapat bersosialisasi dengan baik sesuai ajaran islam.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mewujudkan perilaku anak mandiri, kreatif, inovatif sesuai dengan ajaran islam sehingga mereka siap memasuki jenjang pendidikan dasar selanjutnya.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Mengembangkan kemampuan berpikir kritis dan kreatif dengan menerapkan pembelajaran aktif, kontekstual dan berbasis pemecahan masalah.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-pink-500 mr-2 mt-1">▸</span>
+                                                <span>Menciptakan lingkungan belajar yang menyenangkan dan membahagiakan, melalui pengalaman bermain yang bermakna.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prestasi dan Akreditasi TK -->
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
+                        
+                        <!-- Akreditasi -->
+                        <div class="bg-pink-50 border-l-4 border-pink-500 p-4 mb-12 rounded">
+                            <h3 class="text-xl font-semibold mb-2 text-pink-800">Akreditasi A</h3>
+                            <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional PAUD dan Pendidikan Anak Usia Dini (BAN PAUD dan PNF). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
+                        </div>
+
+                        <!-- Prestasi -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 Lomba Seni Tari Kreasi Tingkat Kota</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara Umum Pentas Seni Anak Se-Provinsi</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Best School dalam Education Fair</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Sekolah Sehat Tingkat Kota</h4>
+                                        <p class="text-sm text-gray-600">Penghargaan atas kesehatan dan kebersihan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDIT Content -->
+                <div id="sdit" class="tab-content hidden">
+                    <!-- Visi Misi SDIT -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                        <div class="p-8 lg:p-12">
+                            <!-- Konten Visi -->
+                            <div class="mb-12">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-bullseye text-[24px] text-red-600"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visi</h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Mencetak generasi muslim yang shalih, hafidz, dan terampil.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konten Misi -->
+                            <div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-rocket text-[24px] text-red-600"></i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Misi</h3>
+                                        <ul class="text-gray-600 leading-relaxed space-y-2">
+                                            <li class="flex items-start">
+                                                <span class="text-red-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik peserta didik hingga memiliki akhlak mulia sebagaimana akhlak Rasulullah Shallahu’ Alaihi Wassalam.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-red-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik peserta didik agar mencintai Al-Qur’an dan Hadits, menghafalkannya, memahaminya serta mengamalkannya sesuai pemahaman para Salafus Shalih.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-red-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik peserta didik menjadi muslim yang mandiri dan kreatif dengan membekali bahasa asing dan keterampilan dasar teknologi informasi</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-red-500 mr-2 mt-1">▸</span>
+                                                <span>Memaksimalkan pencapaian 8 Standar Nasional Pendidikan dari BNSP KEMENDIKBUD RI.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prestasi dan Akreditasi SDIT -->
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
+                        
+                        <!-- Akreditasi -->
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-12 rounded">
+                            <h3 class="text-xl font-semibold mb-2 text-red-800">Akreditasi A</h3>
+                            <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-SM). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
+                        </div>
+
+                        <!-- Prestasi -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 Olimpiade Sains Nasional (OSN) IPA Tingkat Provinsi</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 2 Lomba Tahfidz Al-Qur'an Tingkat Nasional</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 Robotika Tingkat Kota</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Sekolah Adiwiyata Nasional</h4>
+                                        <p class="text-sm text-gray-600">Penghargaan atas kepedulian lingkungan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SMPIT Content -->
+                <div id="smpit" class="tab-content hidden">
+                    <!-- Visi Misi SMPIT -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                        <div class="p-8 lg:p-12">
+                            <!-- Konten Visi -->
+                            <div class="mb-12">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-bullseye text-[24px] text-blue-600"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visi</h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Membentuk Generasi Rabbani yang Berakhlak Mulia, Unggul dalam Ilmu Pengetahuan dan Teknologi, Fasih Berkomunikasi Global, Berlandaskan Akidah Ahlussunnah wal Jama'ah.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konten Misi -->
+                            <div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-rocket text-[24px] text-blue-600"></i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Misi</h3>
+                                        <ul class="text-gray-600 leading-relaxed space-y-2">
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik siswa dengan nilai-nilai Islam yang komprehensif, meliputi akidah,ibadah, akhlak, dan muamalah, sehingga terbentuk pribadi yang shalih dan berakhlak mulia.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2 mt-1">▸</span>
+                                                <span>Memfasilitasi program menghafal Al-Qur'an secara intensif dan berkelanjutan, sehingga setiap siswa memiliki kemampuan menghafal Al-Qur'an sesuai dengan potensinya.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2 mt-1">▸</span>
+                                                <span>Mengembangkan potensi intelektual siswa melalui pembelajaran yang efektif dan inovatif, sehingga mereka memiliki keterampilan yang dibutuhkan untuk menghadapi tantangan masa depan.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2 mt-1">▸</span>
+                                                <span>Membentuk karakter siswa yang mandiri, kreatif, dan kritis, serta memiliki jiwa kepemimpinan yang kuat.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2 mt-1">▸</span>
+                                                <span>Menumbuhkan semangat ukhuwah Islamiyah dan nasionalisme, sehingga siswa memiliki rasa cinta terhadap agama, bangsa, dan negara.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prestasi dan Akreditasi SMPIT -->
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
+                        
+                        <!-- Akreditasi -->
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-12 rounded">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-800">Akreditasi A</h3>
+                            <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-SM). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
+                        </div>
+
+                        <!-- Prestasi -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 Olimpiade Sains Nasional (OSN) Matematika Tingkat Provinsi</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Peringkat 3 Terbaik dalam Lomba Debat Bahasa Inggris Se-Sulawesi Selatan</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Medali Emas Kejuaraan Pencak Silat Antar Pelajar</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Sekolah Adiwiyata Nasional</h4>
+                                        <p class="text-sm text-gray-600">Penghargaan atas kepedulian lingkungan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SMKIT Content -->
+                <div id="smkit" class="tab-content hidden">
+                    <!-- Visi Misi SMKIT -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                        <div class="p-8 lg:p-12">
+                            <!-- Konten Visi -->
+                            <div class="mb-12">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-bullseye text-[24px] text-gray-600"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visi</h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Mencetak generasi muslim yang shalih, hafidz, dan terampil.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konten Misi -->
+                            <div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-rocket text-[24px] text-gray-600"></i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Misi</h3>
+                                        <ul class="text-gray-600 leading-relaxed space-y-2">
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Mendidik siswa dengan nilai-nilai Islam yang komprehensif, meliputi akidah,ibadah, akhlak, dan muamalah, sehingga terbentuk pribadi yang shalih dan berakhlak mulia.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Memfasilitasi program menghafal Al-Qur'an secara intensif dan berkelanjutan, sehingga setiap siswa memiliki kemampuan menghafal Al-Qur'an sesuai dengan potensinya.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Mengembangkan potensi intelektual siswa melalui pembelajaran yang efektif dan inovatif, sehingga mereka memiliki keterampilan yang dibutuhkan untuk menghadapi tantangan masa depan.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Membentuk karakter siswa yang mandiri, kreatif, dan kritis, serta memiliki jiwa kepemimpinan yang kuat.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Menumbuhkan semangat ukhuwah Islamiyah dan nasionalisme, sehingga siswa memiliki rasa cinta terhadap agama, bangsa, dan negara.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Menyelenggarakan kegiatan ekstrakurikuler yang beragam untukmengembangkan minat dan bakat siswa, serta menanamkan nilai-nilai sportivitas dan kerja sama.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Membangun kerja sama yang baik dengan orang tua, masyarakat, dan lembaga terkait untuk menciptakan lingkungan belajar yang kondusif.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Menyiapkan lulusan yang siap melanjutkan studi ke jenjang yang lebih tinggi atau terjun langsung ke masyarakat.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <span class="text-gray-500 mr-2 mt-1">▸</span>
+                                                <span>Menjamin hak hak setiap anak tanpa kecuali termasuk di dalamnya siswa yg berkebutuhan khusus.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prestasi dan Akreditasi SMKIT -->
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-award mr-4 text-indigo-500"></i>Akreditasi</h2>
+                        
+                        <!-- Akreditasi -->
+                        <div class="bg-gray-50 border-l-4 border-gray-500 p-4 mb-12 rounded">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Akreditasi A</h3>
+                            <p class="text-gray-700">Kami bangga menyandang predikat <strong>Akreditasi "A"</strong> dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-SM). Ini adalah bukti komitmen kami dalam memberikan standar pendidikan tertinggi.</p>
+                        </div>
+
+                        <!-- Prestasi -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mb-8 text-gray-800"><i class="fas fa-trophy mr-4 text-yellow-500"></i>Prestasi</h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 1 LKS (Lomba Kompetensi Siswa) Tingkat Provinsi</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Best Innovation dalam Science Fair tingkat Nasional</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2022</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Juara 2 Web Development Competition</h4>
+                                        <p class="text-sm text-gray-600">Tahun 2023</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-medal text-yellow-300 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Sertifikasi Industri Teknologi Informasi</h4>
+                                        <p class="text-sm text-gray-600">Pengakuan kompetensi siswa</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,11 +636,7 @@
             </div>
         </section>
 
-        
-
     </main>
-
-
 
         <!-- Footer -->
             <footer class="bg-gradient-to-r from-green-600 to-green-800 rounded-[32px] px-8 sm:px-6 py-8 text-white max-w-2xl mx-auto mt-8">
@@ -169,7 +694,7 @@
                 <!-- Informasi -->
                 <a href="infromasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
                     <i class="fas fa-clipboard-list text-[18px]"></i>
-                    <span class="mt-2">Artikel</span>
+                    <span class="mt-2">Informasi</span>
                 </a>
 
                 <!-- Program -->
@@ -186,5 +711,32 @@
                 </nav>
             </div>
             <!-- Penutup NavBar -->
-</body>
+
+        <!-- JavaScript -->
+        <script>
+            // Tab Switching
+            function switchTab(tabName) {
+                // Hide all tab contents
+                const tabContents = document.querySelectorAll('.tab-content');
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+
+                // Remove active class from all tab buttons
+                const tabButtons = document.querySelectorAll('.tab-btn');
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('bg-green-600', 'text-white');
+                    btn.classList.add('text-gray-600');
+                });
+
+                // Show selected tab content
+                document.getElementById(tabName).classList.remove('hidden');
+
+                // Add active class to clicked button
+                const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
+                activeBtn.classList.remove('text-gray-600');
+                activeBtn.classList.add('bg-green-600', 'text-white');
+            }
+        </script>
+    </body>
 </html>
