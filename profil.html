@@ -4,6 +4,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>IQIS Makassar | Profil</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/tab.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
         <style>
@@ -45,7 +46,7 @@
                 <!-- Tab Navigation -->
                 <div class="flex justify-center mb-8">
                     <div class="bg-white rounded-full shadow-md p-1 flex flex-wrap justify-center max-w-lg">
-                        <button onclick="switchTab('kbit')" class="tab-btn px-4 py-2 rounded-full bg-green-600 text-white font-semibold text-xs transition-all duration-300" data-tab="kbit">
+                        <button onclick="switchTab('kbit')" class="tab-btn px-4 py-2 rounded-full bg-green-600 text-white text-xs transition-all duration-300" data-tab="kbit">
                             KBIT
                         </button>
                         <button onclick="switchTab('tkit')" class="tab-btn px-4 py-2 rounded-full text-gray-600 text-xs transition-all duration-300" data-tab="tkit">
@@ -696,7 +697,7 @@
                 </a>
 
                 <!-- Informasi -->
-                <a href="infromasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
+                <a href="informasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
                     <i class="fas fa-clipboard-list text-[18px]"></i>
                     <span class="mt-2">Informasi</span>
                 </a>
@@ -715,32 +716,5 @@
                 </nav>
             </div>
             <!-- Penutup NavBar -->
-
-        <!-- JavaScript -->
-        <script>
-            // Tab Switching
-            function switchTab(tabName) {
-                // Hide all tab contents
-                const tabContents = document.querySelectorAll('.tab-content');
-                tabContents.forEach(content => {
-                    content.classList.add('hidden');
-                });
-
-                // Remove active class from all tab buttons
-                const tabButtons = document.querySelectorAll('.tab-btn');
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('bg-green-600', 'text-white');
-                    btn.classList.add('text-gray-600');
-                });
-
-                // Show selected tab content
-                document.getElementById(tabName).classList.remove('hidden');
-
-                // Add active class to clicked button
-                const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
-                activeBtn.classList.remove('text-gray-600');
-                activeBtn.classList.add('bg-green-600', 'text-white');
-            }
-        </script>
     </body>
 </html>
