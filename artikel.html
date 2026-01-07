@@ -1,0 +1,235 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>IQIS Makassar | Artikel</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+        </style>
+    </head>
+    <body class="bg-[#F2F2F2]">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-gradient-to-r from-green-600 to-green-800 pt-2 pb-2">
+        <div class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
+            <!-- Tombol Back dan Logo di kiri -->
+            <div class="flex items-center space-x-4">
+                <button onclick="goBack()" class="back-button flex items-center space-x-2 px-2 py-2 rounded-lg transition-all duration-300">
+                    <i class="fas fa-arrow-left text-white"></i>
+                    <span class="text-white font-medium">Kembali</span>
+                </button>
+            </div>
+            
+            <!-- Opsi: Tambahkan elemen di kanan jika diperlukan -->
+            <!-- <div class="flex items-center space-x-3">
+                <button class="text-white/80 hover:text-white transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div> -->
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto mt-4 px-4 sm:px-6 md:px-8 pt-4">
+        <article class="mt-16">
+            <!-- Hero Image -->
+            <div class="rounded-xl overflow-hidden shadow-lg mb-8">
+                <img src="img/iqis2.jpg" 
+                    alt="Prestasi Siswa" 
+                    class="w-full h-auto">
+            </div>
+            
+            <!-- Article Header -->
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                    Penghargaan Terbaik diraih Oleh Siswa
+                </h1>
+
+                <div class="flex items-center space-x-3 text-sm text-gray-500 mb-4">
+                    <span class="py-1 rounded-full font-medium">Ibnul Qayyim Islamic School</span>
+                    <span>•</span>
+                    <span>15 November 2024</span>
+                </div>
+            
+            </header>
+            
+            <!-- Article Body -->
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Dengan bangga kami umumkan bahwa tim olimpiade sains SMA Nusantara telah berhasil meraih 
+                    juara 1 dalam kompetisi Olimpiade Sains Nasional (OSN) 2024 bidang Matematika. 
+                    Prestasi gemilang ini diraih setelah melalui proses seleksi yang ketat dari tingkat 
+                    kabupaten hingga nasional.
+                </p>
+                
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Tim yang terdiri dari tiga siswa berbakat, yaitu Ahmad Rizki Pratama (XI IPA 1), 
+                    Sarah Putri Amelia (XI IPA 2), dan Muhammad Fachri (XI IPA 3), berhasil mengungguli 
+                    45 tim lain dari seluruh Indonesia. Mereka menunjukkan pemahaman mendalam dan 
+                    kemampuan problem solving yang luar biasa dalam setiap tahap kompetisi.
+                </p>
+                
+                <!-- <blockquote class="border-l-4 border-blue-600 pl-6 py-4 my-8 bg-blue-50 rounded-r-lg">
+                    <p class="text-gray-700 italic text-lg">
+                        "Prestasi ini bukan hanya kebanggaan untuk siswa-siswa kami, tetapi juga bukti 
+                        komitmen sekolah dalam mengembangkan potensi akademik setiap individu. 
+                        Kami sangat bangga dengan pencapaian mereka."
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">- Kepala Sekolah SMA Nusantara</p>
+                </blockquote> -->
+                
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Perjalanan menuju juara nasional tidaklah mudah. Selama 6 bulan terakhir, tim telah 
+                    menjalani pelatihan intensif di bawah bimbingan guru-guru berpengalaman. Mereka 
+                    berlatih setiap hari setelah sekolah, menyelesaikan ratusan soal latihan, dan 
+                    mengikuti simulasi kompetisi untuk mempersiapkan diri sebaik mungkin.
+                </p>
+                
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Prestasi ini membawa SMA Nusantara ke peta pendidikan nasional sebagai salah satu 
+                    sekolah dengan program unggulan di bidang sains. Ke depannya, sekolah akan terus 
+                    meningkatkan kualitas pembelajaran dan membuka lebih banyak kesempatan bagi siswa 
+                    untuk mengembangkan potensi mereka di berbagai bidang.
+                </p>
+                
+                <p class="text-gray-700 leading-relaxed">
+                    Selamat kepada para pemenang dan terima kasih kepada semua pihak yang telah 
+                    mendukung perjalanan mereka. Semoga prestasi ini dapat menginspirasi siswa-siswa 
+                    lain untuk terus berprestasi dan mengharumkan nama sekolah.
+                </p>
+            </div>
+        </article>
+        
+        <!-- Related Articles -->
+        <section class="mt-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-6">Artikel Terkait</h2>
+                <div class="flex flex-col space-y-4 px-2 sm:px-0">
+                    <a href="artikel.html" class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+
+                    <div class="w-32 aspect-[1/1] overflow-hidden rounded-l-lg flex-shrink-0">
+                        <img src="img/iqis5.jpg"
+                            alt="Penghargaan Terbaik diraih oleh Siswa"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-4 flex flex-col justify-center flex-grow">
+                        <h3 class="font-semibold text-gray-900 text-sm leading-tight line-clamp-1">Penghargaan Terbaik diraih oleh Siswa</h3>
+                        <p class="text-xs text-gray-400 mt-2">Ibnul Qayyim Islamic School</p>
+                        <p class="text-xs text-gray-600 mt-2 leading-snug line-clamp-2">
+                            Kabar membanggakan kembali datang dari dunia pendidikan. Kali ini, prestasi gemilang berhasil ditorehkan oleh siswa SMPIT Ibnul Qayyim dalam ajang Olimpiade Sains Nasional. Berkat dedikasi dan kerja keras yang tak kenal lelah, penghargaan kategori Terbaik berhasil dibawa pulang, mengharumkan nama sekolah sekaligus menjadi inspirasi bagi generasi muda lainnya.
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="/artikel/kegiatan-outing-gowa" class="w-full flex flex-row bg-white shadow-sm hover:shadow-md rounded-lg transition duration-300 overflow-hidden">
+
+                    <div class="w-32 aspect-[1/1] overflow-hidden rounded-l-lg flex-shrink-0">
+                        <img src="img/iqis4.jpg"
+                            alt="Kegiatan Outing di Gowa"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-4 flex flex-col justify-center flex-grow">
+                        <h3 class="font-semibold text-gray-900 text-sm leading-tight line-clamp-1">Kegiatan Outing di Gowa</h3>
+                        <p class="text-xs text-gray-400 mt-2">Ibnul Qayyim Islamic School</p>
+                        <p class="text-xs text-gray-600 mt-2 leading-snug line-clamp-2">
+                            Suasana segar pegunungan dan hamparan hijau Kabupaten Gowa menjadi saksi keceriaan para siswa SMPIT Ibnul Qayyim dalam kegiatan outing class tahun ini. Jauh dari hiruk-pikuk ruang kelas dan tumpukan buku, para siswa diajak untuk belajar langsung dari alam, mempererat ukhuwah, serta tadabbur alam di salah satu destinasi ikonik Sulawesi Selatan.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+        </section>
+    </main>
+
+
+        <!-- Footer -->
+            <footer class="bg-gradient-to-r from-green-600 to-green-800 rounded-[32px] px-8 sm:px-6 py-8 text-white max-w-2xl mx-auto mt-8">
+                <div class="flex flex-col sm:flex-row justify-between gap-10">
+                    
+                    <!-- Lokasi -->
+                    <div class="sm:w-1/2 pr-4 pl-6">
+                    <img alt="yayasan" class="mb-4 h-12" src="img/yayasaniqis.png" width="120" />
+                    <div>
+                        <h4 class="font-bold text-[15px] mb-2 leading-snug">Ibnul Qayyim Islamic School</h4>
+                        <p class="text-[13px] leading-relaxed">
+                            <a href="https://maps.app.goo.gl/fHwqpS6tJmeQEMHx6">Jl. Taman Bunga Sudiang No.2, Laikang, Biringkanaya, Makassar, Sulawesi Selatan 90242</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div class="sm:w-1/2 pl-4">
+                    <h3 class="font-semibold text-white mb-4 text-[15px]">Hubungi Kami</h3>
+                    <ul class="text-[13px] space-y-3 leading-relaxed">
+                        <li class="flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-white text-lg"></i>
+                        <a href="https://wa.me/6281341311314" target="_blank" class="hover:underline">+62 813 4131 1314</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                        <i class="fab fa-instagram text-white text-lg"></i>
+                        <a href="https://www.instagram.com/iqismakassar" target="_blank" class="hover:underline">iqismakassar</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                        <i class="fab fa-facebook-f text-white text-lg"></i>
+                        <a href="https://web.facebook.com/ibnulqayyim.sch.id/" target="_blank" class="hover:underline">Ibnul Qayyim Islamic School</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                        <i class="fab fa-youtube text-white text-lg"></i>
+                        <a href="https://www.youtube.com/@IQISTV" target="_blank" class="hover:underline">IQISTV</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div><br><br><br>
+            </footer>
+
+        <!-- NavBar -->
+            <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 pb-2 pt-2 z-50">
+                <nav aria-label="Primary" class="max-w-2xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 h-14 text-gray-400 text-[12px] font-light">
+                
+                <!-- Beranda -->
+                <a href="index.html" aria-label="Beranda" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
+                    <i class="fas fa-home text-[18px]"></i>
+                    <span class="mt-2">Beranda</span>
+                </a>
+
+                <!-- Informasi -->
+                <a href="informasi.html" aria-label="Informasi" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
+                    <i class="fas fa-clipboard-list text-[18px]"></i>
+                    <span class="mt-2">Informasi</span>
+                </a>
+
+                <!-- Program -->
+                <a href="program.html" aria-label="Program" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
+                    <i class="fas fa-book-open text-[18px]"></i>
+                    <span class="mt-2">Program</span>
+                </a>
+
+                <!-- Tentang -->
+                <a href="profil.html" aria-label="Profil" class="flex flex-col items-center justify-center flex-1 hover:text-[green]">
+                    <i class="fas fa-school text-[18px]"></i>
+                    <span class="mt-2">Profil</span>
+                </a>
+                </nav>
+            </div>
+            <!-- Penutup NavBar -->
+    </body>
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Jika tidak ada halaman sebelumnya, arahkan ke halaman utama
+                window.location.href = '/';
+            }
+        }
+    </script>
+</html>
