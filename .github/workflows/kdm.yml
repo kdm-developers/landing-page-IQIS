@@ -1,0 +1,35 @@
+name: 🚀 Deploy Website to AApanel
+
+on:
+  push:
+    branches:
+      - main  # Ganti dengan 'master' jika branch utama kamu bernama master
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      # Langkah 1: Mengambil kode terbaru dari repository
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # Langkah 2: Proses upload ke FTP AApanel
+      - name: 📂 Sync files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Path di server AApanel (PENTING: Akhiri dengan slash /)
+          # Biasanya formatnya: /www/wwwroot/namadomain.com/
+          server-dir: /www/wwwroot/domainkamu.com/ 
+          
+          # Folder lokal yang mau diupload (./ artinya semua file di root repo)
+          local-dir: ./
+          
+          # File yang tidak perlu diupload
+          exclude: |
+            **/.git*
+            **/.github*
+            README.md
