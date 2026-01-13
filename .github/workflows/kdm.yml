@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # Path di server AApanel (PENTING: Akhiri dengan slash /)
           # Biasanya formatnya: /www/wwwroot/namadomain.com/
-          server-dir: /www/wwwroot/domainkamu.com/ 
+          server-dir: /www/wwwroot/landing.iqis.sch.id/ 
           
           # Folder lokal yang mau diupload (./ artinya semua file di root repo)
           local-dir: ./
