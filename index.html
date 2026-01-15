@@ -21,6 +21,22 @@
       .slider-container::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
       }
+      .accordion-content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+      }
+      .accordion-content.active {
+          max-height: 500px;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+      }
+      .rotate-icon {
+          transition: transform 0.3s ease;
+      }
+      .rotate-icon.active {
+          transform: rotate(180deg);
+      }
     </style>
   </head>
   <body class="bg-[#F2F2F2] m-0 p-0">
@@ -347,6 +363,117 @@
           </div>
         </section>
 
+        <section class="mt-8">
+          <div class="text-center mb-8">
+              <h2 class="text-2xl font-bold text-gray-800">
+                  <span class="bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">FAQ</span>
+              </h2>
+              <p class="text-gray-600 mt-2 text-sm">Pertanyaan yang sering diajukan</p>
+          </div>
+          <!-- FAQ Container -->
+          <div id="faqContainer" class="max-w-4xl mx-auto space-y-4">
+              <!-- Pendaftaran -->
+              <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow" data-category="pendaftaran">
+                  <button class="accordion-trigger w-full px-6 py-6 text-left flex items-center justify-between group">
+                      <div class="flex items-center space-x-4">
+                          <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                              <i class="fas fa-file-alt text-green-600"></i>
+                          </div>
+                          <div>
+                              <h3 class="text-md font-semibold text-gray-900">Bagaimana cara mendaftar di sekolah ini?</h3>
+                              <span class="text-xs text-gray-500 mt-1 block">Pendaftaran</span>
+                          </div>
+                      </div>
+                      <i class="fas fa-chevron-down rotate-icon text-gray-400 group-hover:text-gray-600"></i>
+                  </button>
+                  <div class="accordion-content px-6 text-sm">
+                      <p class="text-gray-600 leading-relaxed mb-3">
+                          Proses pendaftaran dapat dilakukan melalui beberapa tahapan:
+                      </p>
+                      <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                          <li>Isi formulir pendaftaran online melalui website resmi</li>
+                          <li>Siapkan dokumen yang diperlukan (akta kelahiran, rapor, foto)</li>
+                          <li>Lakukan pembayaran biaya pendaftaran</li>
+                          <li>Ikuti tes seleksi (akademik dan wawancara)</li>
+                          <li>Tunggu pengumuman hasil seleksi</li>
+                      </ol>
+                  </div>
+              </div>
+
+              <!-- Biaya -->
+              <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow" data-category="biaya">
+                  <button class="accordion-trigger w-full px-6 py-6 text-left flex items-center justify-between group">
+                      <div class="flex items-center space-x-4">
+                          <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
+                              <i class="fas fa-coins text-yellow-600"></i>
+                          </div>
+                          <div>
+                              <h3 class="text-md font-semibold text-gray-900">Apakah tersedia program beasiswa?</h3>
+                              <span class="text-xs text-gray-500 mt-1 block">Biaya</span>
+                          </div>
+                      </div>
+                      <i class="fas fa-chevron-down rotate-icon text-gray-400 group-hover:text-gray-600"></i>
+                  </button>
+                  <div class="accordion-content px-6 text-sm">
+                      <p class="text-gray-600 leading-relaxed ">
+                          Ya, kami menyediakan berbagai program beasiswa untuk siswa berprestasi dan dari keluarga 
+                          kurang mampu. Beasiswa tersedia untuk berbagai kategori: prestasi akademik, 
+                          prestasi non-akademik (olahraga, seni), serta beasiswa sosial. Informasi lengkap dan 
+                          formulir pengajuan dapat diperoleh di bagian administrasi sekolah.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Akademik -->
+              <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow" data-category="akademik">
+                  <button class="accordion-trigger w-full px-6 py-6 text-left flex items-center justify-between group">
+                      <div class="flex items-center space-x-4">
+                          <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                              <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                          </div>
+                          <div>
+                              <h3 class="text-md font-semibold text-gray-900">Bagaimana kualitas guru di sekolah ini?</h3>
+                              <span class="text-xs text-gray-500 mt-1 block">Akademik</span>
+                          </div>
+                      </div>
+                      <i class="fas fa-chevron-down rotate-icon text-gray-400 group-hover:text-gray-600"></i>
+                  </button>
+                  <div class="accordion-content px-6">
+                      <p class="text-gray-600 leading-relaxed text-sm">
+                          Guru-guru kami adalah profesional terpilih dengan kualifikasi S2 dan S3, 
+                          bersertifikat pendidik, serta memiliki pengalaman mengajar lebih dari 5 tahun. 
+                          Mereka secara rutin mengikuti pelatihan dan workshop untuk meningkatkan 
+                          kompetensi mengajar dengan metode pembelajaran terkini.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Pendaftaran -->
+              <div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow" data-category="pendaftaran">
+                  <button class="accordion-trigger w-full px-6 py-6 text-left flex items-center justify-between group">
+                      <div class="flex items-center space-x-4">
+                          <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                              <i class="fas fa-calendar-check text-green-600"></i>
+                          </div>
+                          <div>
+                              <h3 class="text-md font-semibold text-gray-900">Kapan waktu pendaftaran tahun ajaran baru?</h3>
+                              <span class="text-xs text-gray-500 mt-1 block">Pendaftaran</span>
+                          </div>
+                      </div>
+                      <i class="fas fa-chevron-down rotate-icon text-gray-400 group-hover:text-gray-600"></i>
+                  </button>
+                  <div class="accordion-content px-6">
+                      <p class="text-gray-600 leading-relaxed text-sm">
+                          Pendaftaran tahun ajaran baru dibuka setiap tahun pada bulan Oktober dan ditutup 
+                          pada bulan Juni. Namun, kami juga membuka pendaftaran kelas transferr untuk 
+                          semester ganjil (Juli-Desember) dan genap (Januari-Juni). Pastikan mengikuti 
+                          update informasi melalui website dan media sosial resmi kami.
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </section>
+
         <!-- Testimoni -->
         <section class="mt-8">
           <div class="text-center mb-8">
@@ -477,4 +604,132 @@
       </div>
     <!-- Penutup NavBar -->
   </body>
+  <script>
+    // Accordion functionality
+      document.querySelectorAll('.accordion-trigger').forEach(button => {
+          button.addEventListener('click', () => {
+              const content = button.nextElementSibling;
+              const icon = button.querySelector('.rotate-icon');
+              const isActive = content.classList.contains('active');
+              
+              // Close all other accordions
+              document.querySelectorAll('.accordion-content').forEach(item => {
+                  item.classList.remove('active');
+              });
+              document.querySelectorAll('.rotate-icon').forEach(item => {
+                  item.classList.remove('active');
+              });
+              
+              // Toggle current accordion
+              if (!isActive) {
+                  content.classList.add('active');
+                  icon.classList.add('active');
+              }
+          });
+      });
+
+      // Category filtering (jika menggunakan kategori)
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      categoryTabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              // Update active tab
+              categoryTabs.forEach(t => t.classList.remove('active'));
+              tab.classList.add('active');
+              
+              const category = tab.dataset.category;
+              
+              // Filter items
+              faqItems.forEach(item => {
+                  if (category === 'all' || item.dataset.category === category) {
+                      item.style.display = 'block';
+                      setTimeout(() => {
+                          item.classList.add('fade-in');
+                      }, 10);
+                  } else {
+                      item.style.display = 'none';
+                      item.classList.remove('fade-in');
+                  }
+              });
+              
+              // Reset search
+              const searchInput = document.getElementById('searchInput');
+              if (searchInput) {
+                  searchInput.value = '';
+                  document.getElementById('clearSearch').classList.add('hidden');
+              }
+          });
+      });
+
+      // Search functionality (jika menggunakan search)
+      const searchInput = document.getElementById('searchInput');
+      const clearButton = document.getElementById('clearSearch');
+      const noResults = document.getElementById('noResults');
+      const faqContainer = document.getElementById('faqContainer');
+
+      if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+              const searchTerm = e.target.value.toLowerCase();
+              let hasResults = false;
+              
+              if (searchTerm) {
+                  clearButton.classList.remove('hidden');
+              } else {
+                  clearButton.classList.add('hidden');
+              }
+              
+              faqItems.forEach(item => {
+                  const question = item.querySelector('h3').textContent.toLowerCase();
+                  const answer = item.querySelector('.accordion-content p').textContent.toLowerCase();
+                  
+                  if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                      item.style.display = 'block';
+                      hasResults = true;
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+              
+              // Show/hide no results message
+              if (searchTerm && !hasResults) {
+                  noResults.classList.remove('hidden');
+                  faqContainer.classList.add('hidden');
+              } else {
+                  noResults.classList.add('hidden');
+                  faqContainer.classList.remove('hidden');
+              }
+          });
+
+          clearButton.addEventListener('click', clearSearchInput);
+      }
+
+      function clearSearchInput() {
+          if (searchInput) {
+              searchInput.value = '';
+              clearButton.classList.add('hidden');
+              noResults.classList.add('hidden');
+              faqContainer.classList.remove('hidden');
+              
+              // Show all items
+              faqItems.forEach(item => {
+                  item.style.display = 'block';
+              });
+          }
+      }
+
+      // Optional: Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute('href'));
+              if (target) {
+                  target.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                  });
+              }
+          });
+      });
+  </script>
 </html>
